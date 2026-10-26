@@ -1,6 +1,6 @@
 # 📱 Samsung Galaxy S25 FE – Instagram Reels Scrubbing Glitch Fix
 
-Fixes the neon pink/white blocky pixelation and frame-buffer corruption that happens when fast-forwarding or scrubbing through Instagram Reels on the **Samsung Galaxy S25 FE** (and other Exynos devices)[cite: 1].
+Fixes the neon pink/white blocky pixelation and frame-buffer corruption that happens when fast-forwarding or scrubbing through Instagram Reels on the **Samsung Galaxy S25 FE** (and other Exynos devices).
 
 ## 🚀 Patch Online in Your Phone Browser (No PC or Root Needed)
 
@@ -11,7 +11,7 @@ Click the **Open in Colab** button below to patch any official Instagram `.apkm`
 ---
 
 ## 🔍 Why This Glitch Happens
-Instagram serves heavily compressed 10-bit AV1 (`video/av01`) video streams for Reels. When you drag the progress bar rapidly between keyframes, the Galaxy S25 FE's hardware video decoder (`c2.exynos.av1.decoder`) fails to flush the previous frame buffer and loses color-space sync, causing the video layer to break up into pink and white blocks[cite: 1].
+Instagram serves heavily compressed 10-bit AV1 (`video/av01`) video streams for Reels. When you drag the progress bar rapidly between keyframes, the Galaxy S25 FE's hardware video decoder (`c2.exynos.av1.decoder`) fails to flush the previous frame buffer and loses color-space sync, causing the video layer to break up into pink and white blocks.
 
 ## 🛠️ How This Fix Works (Zero Mod Bloat)
 Unlike third-party mods or patch managers (like Morphe/ReVanced) that inject extra `.dex` files and hook frameworks that Meta's anti-bot security actively flags, this script performs a **pure 10-byte in-place string replacement** inside the official Instagram APK:
