@@ -1,3 +1,10 @@
+> ## ⚠️ CRITICAL ACCOUNT SAFETY WARNING (DO NOT USE ON MAIN ACCOUNTS)
+> **Update (October 2026):** Extended stability testing confirmed that even a pure 10-byte binary patch with zero third-party frameworks (no Morphe/ReVanced code) eventually triggers **Meta's automated video-selfie bot verification (~24–30 hours after login)**.
+> 
+> **Why?** Instagram v450+ enforces strict **Google Play Integrity (`appRecognitionVerdict`)** checks on the APK's cryptographic signature. Because Android requires any modified APK on a non-rooted device to be re-signed with a custom key, Meta's servers flag the custom certificate hash as an `UNRECOGNIZED_VERSION`.
+> 
+> **Recommendation:** Do **NOT** log into a re-signed Instagram APK with an account you care about. This repository is preserved strictly for technical reference demonstrating that the Galaxy S25 FE's Reels scrubbing glitch is caused by `c2.exynos.av1.decoder` failing on 10-bit `video/av01` streams.
+
 # 📱 Samsung Galaxy S25 FE – Instagram Reels Scrubbing Glitch Fix
 
 Fixes the neon pink/white blocky pixelation and frame-buffer corruption that happens when fast-forwarding or scrubbing through Instagram Reels on the **Samsung Galaxy S25 FE** (and other Exynos devices).
